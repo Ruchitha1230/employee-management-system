@@ -1,40 +1,74 @@
-console.log("Employee Management System Loaded");
+const API_URL = "http://localhost:3000/employees";
 
-// Employee ID starts from 1
-let employeeId = 1;
+// Load employees when page opens
+window.onload = loadEmployees;
 
-// Get button
-const addButton = document.getElementById("addEmployee");
+// Add Employee button
+document.getElementById("addEmployee").addEventListener("click", addEmployee);
 
-// Add click event
-addButton.addEventListener("click", function () {
+// Load employees from backend
+async function loadEmployees() {
 
-    // Get values from input fields
+    const response = await fetch(API_URL);
+    const employees = await response.json();
+
+    const table = document.getElementById("employeeTable");
+
+    // Clear old rows
+    table.innerHTML = "";
+
+    employees.forEach(employee => {
+
+        const row = table.insertRow();
+
+        row.insertCell(0).innerText = employee.id;
+        row.insertCell(1).innerText = employee.name;
+        row.insertCell(2).innerText = employee.department;
+        row.insertCell(3).innerText = employee.salary;
+
+    });
+
+}
+
+// Add employee
+async function addEmployee() {
+
+    const id = Date.now();
+
     const name = document.getElementById("name").value;
     const department = document.getElementById("department").value;
     const salary = document.getElementById("salary").value;
 
-    // Validation
-    if (name === "" || department === "" || salary === "") {
+    if (!name || !department || !salary) {
         alert("Please fill all fields");
         return;
     }
 
-    // Get table body
-    const table = document.getElementById("employeeTable");
+    const employee = {
+        id,
+        name,
+        department,
+        salary
+    };
 
-    // Create a new row
-    const row = table.insertRow();
+    const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(employee)
+    });
 
-    // Create cells
-    row.insertCell(0).innerHTML = employeeId++;
-    row.insertCell(1).innerHTML = name;
-    row.insertCell(2).innerHTML = department;
-    row.insertCell(3).innerHTML = salary;
+    if (response.ok) {
+        alert("Employee Added Successfully");
 
-    // Clear input fields
-    document.getElementById("name").value = "";
-    document.getElementById("department").value = "";
-    document.getElementById("salary").value = "";
+        document.getElementById("name").value = "";
+        document.getElementById("department").value = "";
+        document.getElementById("salary").value = "";
 
-});
+        loadEmployees();
+    } else {
+        alert("Failed to add employee");
+    }
+
+}
