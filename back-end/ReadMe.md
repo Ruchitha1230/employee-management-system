@@ -1,4 +1,4 @@
-    Build the Backend (Node.js + Express)
+Build the Backend (Node.js + Express)
 What are we going to build?
 
 We'll create a backend server that listens for requests.
