@@ -1,0 +1,103 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:#f4f7fc;
+}
+
+/* Login & Signup */
+
+.login-body{
+    background:linear-gradient(135deg,#0d6efd,#4f8cff);
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+.card h2{
+    font-weight:bold;
+}
+
+.form-control{
+    border-radius:8px;
+}
+
+.btn{
+    border-radius:8px;
+}
+
+/* Navbar */
+
+.navbar{
+    box-shadow:0 2px 10px rgba(0,0,0,0.15);
+}
+
+/* Dashboard */
+
+.dashboard-card{
+    border:none;
+    border-radius:12px;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+.card-blue{
+    background:#0d6efd;
+}
+
+.card-green{
+    background:#198754;
+}
+
+.card-orange{
+    background:#fd7e14;
+}
+
+.card-purple{
+    background:#6f42c1;
+}
+
+/* Tables */
+
+.table{
+    background:white;
+}
+
+.table thead{
+    background:#0d6efd;
+    color:white;
+}
+
+.table td,
+.table th{
+    vertical-align:middle;
+}
+
+/* Buttons */
+
+.btn-edit{
+    background:#ffc107;
+    color:black;
+}
+
+.btn-delete{
+    background:#dc3545;
+    color:white;
+}
+
+/* Search */
+
+.search-box{
+    width:300px;
+}
+
+/* Footer */
+
+footer{
+    margin-top:40px;
+    text-align:center;
+    color:gray;
+}

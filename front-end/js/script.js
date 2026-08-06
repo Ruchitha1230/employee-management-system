@@ -72,3 +72,41 @@ async function addEmployee() {
     }
 
 }
+
+// Dashboard Data
+
+const dashboardTable = document.getElementById("recentEmployees");
+
+if (dashboardTable) {
+
+    fetch("http://localhost:3000/employees")
+
+    .then(response => response.json())
+
+    .then(data => {
+
+        document.getElementById("totalEmployees").innerText = data.length;
+
+        data.slice(0,5).forEach(employee=>{
+
+            dashboardTable.innerHTML += `
+
+            <tr>
+
+                <td>${employee.id}</td>
+
+                <td>${employee.name}</td>
+
+                <td>${employee.department}</td>
+
+                <td>${employee.salary}</td>
+
+            </tr>
+
+            `;
+
+        });
+
+    });
+
+}
