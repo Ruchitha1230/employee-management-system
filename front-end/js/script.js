@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/employees";
+const API_URL = "http://localhost:3000";
 
 // Load employees when page opens
 window.onload = loadEmployees;
@@ -79,7 +79,7 @@ const dashboardTable = document.getElementById("recentEmployees");
 
 if (dashboardTable) {
 
-    fetch("http://localhost:3000/employees")
+    fetch(`${API_URL}/employees`)
 
     .then(response => response.json())
 
