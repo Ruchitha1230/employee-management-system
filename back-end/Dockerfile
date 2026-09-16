@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install production dependencies only
-RUN npm ci --omit=dev
+RUN npm ci --omit=dev       # "npm ci" = Installs dependencies exactly as locked in package-lock.json "--omit=dev" = skips dev dependencies ,Smaller image size — fewer packages
 
 # Copy all application code
 COPY . .
