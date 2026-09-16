@@ -1,0 +1,96 @@
+[2026-09-16 05:55:26Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-09-16 05:55:26Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:26Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:26Z INFO HostContext] Well known config file 'Credentials': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.credentials'
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:28Z INFO HostContext] Well known config file 'Runner': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.runner'
+[2026-09-16 05:55:28Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2026-09-16 05:55:28Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26200.
+[2026-09-16 05:55:28Z INFO Listener] Version: 2.337.0
+[2026-09-16 05:55:28Z INFO Listener] Commit: 397b032cbf865e9c3ddfab89d533ec19325e1273
+[2026-09-16 05:55:28Z INFO Listener] Culture: en-IN
+[2026-09-16 05:55:28Z INFO Listener] UI Culture: en-US
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:28Z INFO Listener] Validating directory permissions for: 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:28Z INFO CommandLineParser] Parse
+[2026-09-16 05:55:28Z INFO CommandLineParser] Parsing 3 args
+[2026-09-16 05:55:28Z INFO CommandLineParser] parsing argument
+[2026-09-16 05:55:28Z INFO CommandLineParser] HasArgs: False
+[2026-09-16 05:55:28Z INFO CommandLineParser] Adding Command: remove
+[2026-09-16 05:55:28Z INFO CommandLineParser] parsing argument
+[2026-09-16 05:55:28Z INFO CommandLineParser] HasArgs: True
+[2026-09-16 05:55:28Z INFO CommandLineParser] arg: token
+[2026-09-16 05:55:28Z INFO CommandLineParser] parsing argument
+[2026-09-16 05:55:28Z INFO CommandLineParser] HasArgs: True
+[2026-09-16 05:55:28Z INFO CommandLineParser] Adding option 'token': '***'
+[2026-09-16 05:55:28Z INFO Listener] Arguments parsed
+[2026-09-16 05:55:28Z INFO Runner] ExecuteCommand
+[2026-09-16 05:55:28Z INFO ConfigurationStore] currentAssemblyLocation: D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin\Runner.Listener.dll
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:28Z INFO ConfigurationStore] binPath: D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:28Z INFO ConfigurationStore] RootFolder: D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:28Z INFO HostContext] Well known config file 'Runner': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.runner'
+[2026-09-16 05:55:28Z INFO ConfigurationStore] ConfigFilePath: D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.runner
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:28Z INFO HostContext] Well known config file 'MigratedRunner': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.runner_migrated'
+[2026-09-16 05:55:28Z INFO ConfigurationStore] MigratedConfigFilePath: D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.runner_migrated
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:28Z INFO HostContext] Well known config file 'Credentials': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.credentials'
+[2026-09-16 05:55:28Z INFO ConfigurationStore] CredFilePath: D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.credentials
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:28Z INFO HostContext] Well known config file 'MigratedCredentials': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.credentials_migrated'
+[2026-09-16 05:55:28Z INFO ConfigurationStore] MigratedCredFilePath: D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.credentials_migrated
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:28Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:28Z INFO HostContext] Well known config file 'Service': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.service'
+[2026-09-16 05:55:28Z INFO ConfigurationStore] ServiceConfigFilePath: D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.service
+[2026-09-16 05:55:28Z INFO CommandSettings] Flag 'help': 'False'
+[2026-09-16 05:55:28Z INFO CommandSettings] Flag 'version': 'False'
+[2026-09-16 05:55:28Z INFO CommandSettings] Flag 'commit': 'False'
+[2026-09-16 05:55:28Z INFO CommandSettings] Flag 'check': 'False'
+[2026-09-16 05:55:28Z INFO CommandSettings] Command 'configure': 'False'
+[2026-09-16 05:55:28Z INFO CommandSettings] Command 'remove': 'True'
+[2026-09-16 05:55:28Z INFO CommandSettings] Flag 'local': 'False'
+[2026-09-16 05:55:28Z INFO ConfigurationStore] IsServiceConfigured()
+[2026-09-16 05:55:28Z INFO ConfigurationStore] IsServiceConfigured: False
+[2026-09-16 05:55:28Z INFO ConfigurationStore] IsConfigured()
+[2026-09-16 05:55:28Z INFO ConfigurationStore] IsConfigured: True
+[2026-09-16 05:55:28Z INFO ConfigurationStore] HasCredentials()
+[2026-09-16 05:55:28Z INFO ConfigurationStore] stored True
+[2026-09-16 05:55:28Z INFO ConfigurationStore] Read setting file: 417 chars
+[2026-09-16 05:55:28Z INFO CommandSettings] Arg 'token': '***'
+[2026-09-16 05:55:28Z INFO CommandSettings] Remove token from Arg dictionary.
+[2026-09-16 05:55:30Z INFO ConfigurationManager] Http response code: OK from 'POST https://api.github.com/actions/runner-registration' (D169:376E30:31AE33F:A46F415:6AAA2F52)
+[2026-09-16 05:55:30Z INFO ConfigurationManager] cred retrieved via GitHub auth
+[2026-09-16 05:55:30Z INFO RunnerServer] EstablishVssConnection
+[2026-09-16 05:55:30Z INFO RunnerServer] Establish connection with 100 seconds timeout.
+[2026-09-16 05:55:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-09-16 05:55:31Z INFO RunnerServer] EstablishVssConnection
+[2026-09-16 05:55:31Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-09-16 05:55:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-09-16 05:55:31Z INFO RunnerServer] EstablishVssConnection
+[2026-09-16 05:55:31Z INFO RunnerServer] Establish connection with 60 seconds timeout.
+[2026-09-16 05:55:31Z INFO GitHubActionsService] Starting operation Location.GetConnectionData
+[2026-09-16 05:55:32Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-09-16 05:55:32Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-09-16 05:55:32Z INFO GitHubActionsService] Finished operation Location.GetConnectionData
+[2026-09-16 05:55:33Z INFO Terminal] WRITE LINE: 
+[2026-09-16 05:55:33Z INFO ConfigurationStore] IsConfigured()
+[2026-09-16 05:55:33Z INFO ConfigurationStore] IsConfigured: True
+[2026-09-16 05:55:33Z INFO ConfigurationStore] HasCredentials()
+[2026-09-16 05:55:33Z INFO ConfigurationStore] stored True
+[2026-09-16 05:55:33Z INFO HostContext] Well known directory 'Bin': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\bin'
+[2026-09-16 05:55:33Z INFO HostContext] Well known directory 'Root': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner'
+[2026-09-16 05:55:33Z INFO HostContext] Well known config file 'RSACredentials': 'D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.credentials_rsaparams'
+[2026-09-16 05:55:33Z INFO RSAEncryptedFileKeyManager] Deleting RSA key parameters file D:\OneDrive - SNP Technologies, Inc\employee-management-system\k8\actions-runner\.credentials_rsaparams
+[2026-09-16 05:55:33Z INFO Terminal] WRITE LINE: 
+[2026-09-16 05:55:33Z INFO Listener] Runner execution has finished with return code 0

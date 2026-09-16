@@ -1,0 +1,44 @@
+name: Deploy to kind cluster
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4    #pull the latest code from your repo onto the runner's disk, at the exact commit that triggered this workflow
+
+      - name: Build backend image
+        run: docker build -t ruchitha1230/em-backend:v1 ./back-end
+
+      - name: Build frontend image
+        run: docker build -t ruchitha1230/em-frontend:v1 ./front-end
+
+      - name: Load backend image into kind
+        run: kind load docker-image ruchitha1230/em-backend:v1 --name ems-cluster
+
+      - name: Load frontend image into kind
+        run: kind load docker-image ruchitha1230/em-frontend:v1 --name ems-cluster
+
+      - name: Create or update DB secret
+        run: |
+          kubectl create secret generic ems-db-secret `
+            --from-literal=POSTGRES_USER=${{ secrets.DB_USER }} `
+            --from-literal=POSTGRES_PASSWORD=${{ secrets.DB_PASSWORD }} `
+            --from-literal=POSTGRES_DB=${{ secrets.DB_NAME }} `
+            --dry-run=client -o yaml | kubectl apply -f -
+
+      - name: Apply Kubernetes manifests
+        run: |
+          kubectl apply -f k8s/postgres.yaml
+          kubectl apply -f k8s/backend.yaml
+          kubectl apply -f k8s/frontend.yaml
+
+      - name: Restart deployments to pick up new images
+        run: |
+          kubectl rollout restart deployment/ems-backend
+          kubectl rollout restart deployment/ems-frontend

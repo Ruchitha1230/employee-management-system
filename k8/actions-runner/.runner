@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 4,
+  "agentName": "Ruchitha-laptop",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus3.actions.githubusercontent.com/H9Kwf2y0hsMFIKZPI7aBFhHJ9CN5YKcmHYNyS8wDbQ3DEMfnxT/",
+  "gitHubUrl": "https://github.com/Ruchitha1230/employee-management-system",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
