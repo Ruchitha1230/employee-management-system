@@ -37,9 +37,9 @@ jobs:
 
       - name: Apply Kubernetes manifests
         run: |
-          kubectl apply -f k8s/postgres.yaml
-          kubectl apply -f k8s/backend.yaml
-          kubectl apply -f k8s/frontend.yaml
+          kubectl apply -f k8/postgres.yaml
+          kubectl apply -f k8/backend.yaml
+          kubectl apply -f k8/frontend.yaml
 
       - name: Restart deployments to pick up new images
         run: |
