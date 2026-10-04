@@ -22,7 +22,7 @@ jobs:
               run: cat cow.txt
 
             - name: display files
-              run: ls - ltra
+              run: ls -l
 
             
 
