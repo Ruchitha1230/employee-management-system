@@ -9,13 +9,30 @@ jobs:
             - name: checkout 
               uses: actions/checkout@v7
 
-            - name: welcome message
-              run: echo "welcome"
+            - name: install cowsay
+              run: sudo apt-get update && sudo apt-get install -y cowsay
 
-            - name: list files
-              run: ls
+            - name: display ASCII
+              run: cowsay "Hello from GitHub Actions! 🐄" >> cow.txt
+
+            - name: Test file exist
+              run: grep -i "cow" cow.txt
+
+            - name: read file 
+              run: cat cow.txt
 
             - name: display files
-              run: cat README.md
+              run: ls - ltra
+
+            
+
+            # - name: welcome message
+            #   run: echo "welcome"
+
+            # - name: list files
+            #   run: ls
+
+            # - name: display files
+            #   run: cat README.md
 
             
