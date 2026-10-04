@@ -3,16 +3,16 @@ name: My first workflow
 on: push
 
 jobs:
-    first_job:
-        runs-on: ubuntu-latest
-        steps:
-            - name: checkout 
-              uses: actions/checkout@v7
+   ASCII_job:
+       runs-on: ubuntu-latest
+       steps:
+        - name: checkout 
+        uses: actions/checkout@v7
 
-            - name: list repo files
-              run: ls -ltra
+        - name: list repo files
+          run: ls -ltra
 
-           - name: Execute script
-             run: |
-               chmod +x ascii.script.sh
-               ./ascii.script.sh
+        - name: Execute script
+          run: |
+            chmod +x ascii.script.sh
+            ./ascii.script.sh
