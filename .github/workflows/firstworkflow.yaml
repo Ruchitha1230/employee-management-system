@@ -7,15 +7,15 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: checkout 
-            uses: actions/checkout@v7
-            
+              uses: actions/checkout@v7
+
             - name: welcome message
-            run: echo "welcome"
+              run: echo "welcome"
 
             - name: list files
-            run: ls
+              run: ls
 
             - name: display files
-            run: cat README.md
+              run: cat README.md
 
             
