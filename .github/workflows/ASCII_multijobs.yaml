@@ -23,9 +23,9 @@ jobs:
 
 
     Test_job_2:
+        needs: Build_job_1
         runs_on: ubuntu-latest
-           needs: Build_job_1
-
+        steps:
             - name: download the artifact
               uses: actions/download-artifact@v7
               with:
@@ -37,9 +37,10 @@ jobs:
 
 
     Deploy_job_3:
+        needs: Build_job_2
         runs_on: ubuntu-latest
-            needs: Build_job_2
-             - name: download the artifact
+        steps:   
+            - name: download the artifact
               uses: actions/download-artifact@v7
               with:
                 name: my-artifact
