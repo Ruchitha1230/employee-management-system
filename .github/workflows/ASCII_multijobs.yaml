@@ -1,0 +1,56 @@
+name: Generate ASCII Art using multiple sequencial jobs
+
+on: push
+
+jobs:
+    Build_job_1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout 
+              uses: actions/checkout@v7
+
+            - name: install cowsay
+              run: sudo apt-get update && sudo apt-get install -y cowsay
+
+            - name: display ASCII
+              run: cowsay "Hello from GitHub Actions! 🐄" >> cow.txt
+
+            - name: Upload  the artifact
+              uses: actions/upload-artifact@v7
+              with:
+                name: my-artifact
+                path: cow.txt
+
+
+    Test_job_2:
+        runs_on: ubuntu-latest
+           needs: Build_job_1
+
+            - name: download the artifact
+              uses: actions/download-artifact@v7
+              with:
+                name: my-artifact
+                path: cow.txt 
+
+            - name: Test file exist
+              run: grep -i "hello" cow.txt
+
+
+    Deploy_job_3:
+        runs_on: ubuntu-latest
+            needs: Build_job_2
+             - name: download the artifact
+              uses: actions/download-artifact@v7
+              with:
+                name: my-artifact
+                path: cow.txt 
+    
+
+            - name: read file 
+              run: cat cow.txt
+
+            - name: display files
+              run: ls -l
+            
+            - name: deploy
+              run: echo deploying ....
