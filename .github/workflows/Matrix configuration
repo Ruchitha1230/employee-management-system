@@ -1,0 +1,22 @@
+name: Matrix configuration 
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+     deploy:
+       strategy:
+         matrix:
+           os: [ubuntu-latest, windows-latest, Macos-latest ]
+           images: [hello-world, alpine]      
+        runs-on: ${{ matrix.os}}
+        steps:
+        - name: Echo Docker Details
+          run: docker info
+        - name: Run images
+          run: docker run ${{matrix.images}}
+
+        
+        
+
